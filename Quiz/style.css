@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #bdd4e7;
+	background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+	font-family: 'Nanum Gothic', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 98vh;
+}
+
+h1 {
+	font-size: 2.5rem;
+
+	/* text-align: center; */
+	margin: 5%;
+}
+
+.question-container {
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 0px 0px 81px -6px rgba(0,0,0,0.54);
+	-webkit-box-shadow: 0px 0px 81px -6px rgba(0,0,0,0.54);
+	-moz-box-shadow: 0px 0px 81px -6px rgba(0,0,0,0.54);
+	overflow: hidden;
+	width: 600px;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 10px;
+}
+
+label {
+	cursor: pointer;
+}
+
+button {
+	background-color: #4370E7;
+	border: none;
+	display: block;
+	font-family: inherit;
+	font-size: 1.1rem;
+	font-weight: bold;
+	padding: 1.3rem;
+	width: 100%;
+}
+
+button:hover {
+	background-color: #3355b4;
+	cursor: pointer;
+}
