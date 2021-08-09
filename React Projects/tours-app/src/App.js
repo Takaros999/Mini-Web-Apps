@@ -9,6 +9,11 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [tours, setTours] = useState([]);
 
+  const deleteTour = (id) => {
+    const newTours = tours.filter((tour) => tour.id !== id);
+    setTours(newTours);
+  };
+
   useEffect(() => {
     fetch(url)
       .then((resp) => resp.json())
@@ -25,11 +30,18 @@ function App() {
   if (isLoading) {
     return <Loading />;
   }
-
+  if (tours.length == 0) {
+    return (
+      <>
+        <h1>No Tours Left</h1>
+      </>
+    );
+  }
   return (
     <>
       <h1>Tours</h1>
-      <Tours tours={tours} />
+      <div className="underline"></div>
+      <Tours tours={tours} deleteTour={deleteTour} />
     </>
   );
 }

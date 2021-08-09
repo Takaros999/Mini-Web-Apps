@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import Tour from "./Tour";
 
 const Tours = (props) => {
-  const { tours } = props;
+  // const [tours, setTours] = useState(props.tours);
+  const { tours, deleteTour } = props;
   // console.log("tours");
-  // console.log(tours);
+  // console.log(props);
 
   return (
     <div>
@@ -13,6 +14,9 @@ const Tours = (props) => {
           return (
             <li key={tour.id} className="container">
               <Tour tour={tour} />
+              <button className="delete" onClick={() => deleteTour(tour.id)}>
+                Not Interested
+              </button>
             </li>
           );
         })}

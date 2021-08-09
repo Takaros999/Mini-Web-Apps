@@ -5,7 +5,6 @@ const Tours = (props) => {
   const [readMore, setReadMore] = useState(false);
 
   const ToggleReadMore = () => {
-    console.log("toggled");
     setReadMore(!readMore);
   };
 
@@ -22,7 +21,6 @@ const Tours = (props) => {
           {readMore ? "Read Less" : "Read More"}
         </button>
       </p>
-      <button className="delete">Not Interested</button>
     </>
   );
 };
