@@ -1,0 +1,15 @@
+//TODO
+
+On loggin make a cookie (or session?) with jwt token
+
+learn about cookie parser / express-sessions
+perform action session expiration (change ui/ logout user)
+change blog creation and nest it in user Database
+change home page to show articles and author
+
+for MVC dont forget authRoutes and organize better views folder
+
+Move on with React
+
+!!!! user name next to logout
+->>> fix blog/user db author
