@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  /* margin: 1rem; */
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: rgb(0, 140, 255);
+}
+
+p {
+  width: auto;
+  font-size: 1.1rem;
+  text-align: center;
+  color: rgb(114, 114, 114);
+  padding: 1rem;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1.5rem;
+}
+
+.container {
+  width: 600px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 2%;
+  margin: 2rem;
+}
+
+.header {
+  margin-bottom: 5rem;
+}
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: rgb(62, 167, 253);
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 2px solid; */
+}
+
+.icons {
+  margin-bottom: 0.5rem;
+}
+
+.angle-icon {
+  color: rgba(82, 212, 255, 0.568);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.angle-icon:hover {
+  color: rgba(23, 196, 253, 0.808);
+  cursor: pointer;
+}
+
+.suprise-btn {
+  font-size: 1rem;
+  background: rgba(178, 229, 246, 0.404);
+  color: deepskyblue;
+  border: none;
+  border-radius: 5px;
+  padding: 0.25rem;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+
+.suprise-btn:hover {
+  background: deepskyblue;
+  color: black;
+  cursor: pointer;
+}

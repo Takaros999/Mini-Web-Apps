@@ -85,7 +85,6 @@ p {
   background: rgb(0, 140, 255);
   margin-left: auto;
   margin-right: auto;
-  /* border: 2px solid; */
 }
 
 @media only screen and (max-width: 920px) {
