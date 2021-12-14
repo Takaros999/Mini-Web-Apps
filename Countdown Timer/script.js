@@ -1,10 +1,10 @@
-let days = document.getElementById("days");
-let hours = document.getElementById("hours");
-let mins = document.getElementById("mins");
-let seconds = document.getElementById("seconds");
+let days = document.getElementById('days');
+let hours = document.getElementById('hours');
+let mins = document.getElementById('mins');
+let seconds = document.getElementById('seconds');
 
 let summer = new Date();
-summer.setFullYear(2021, 6, 20);
+summer.setFullYear(2022, 6, 20);
 summer.setHours(6, 45, 0);
 console.log(summer);
 
@@ -32,5 +32,5 @@ function formatTime(time) {
 }
 
 function AutoRefresh(t) {
-  setTimeout("location.reload(true);", t);
+  setTimeout('location.reload(true);', t);
 }
