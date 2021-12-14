@@ -1,88 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-    <title>Mini apps</title>
-		<style>
-			.container {
-				display: flex;
-				flex-direction: row;
-				/* align-items: center; */
-				justify-content: center;
-			}
-			h1 {
-				color: rgb(0, 106, 155);
-				text-align: center;
-			}
-			.name {
-				font-size: 2rem;
-				
-			}
-			ul {
-				text-align: center;
-				list-style-type: none;
-				padding: 0;
-			}
-			li {
-				margin: 1rem 0;
-			}
-			a {
-				color: black;
-				text-decoration: underline;
-			}
-			a:hover {
-				cursor: pointer;
-				color: rgb(0, 106, 155);
-			}
-			</style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body class="container">
-    <div id="wrapper">
-      <h1>My apps</h1>
-      <ul id="files" class="view-tiles">
-        <li>
-          <a
-            href="/Mini-Web-Apps/Weather%20app"
-						onclick="window.open('/Mini-Web-Apps/Weather%20app', '_self');"
-            class="icon icon-directory"
-            title="Weather app"
-            ><span class="name">Weather app</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a
-            href="/Mini-Web-Apps/Countdown%20Timer"
-            class="icon icon-directory"
-            title="Countdown Timer"
-            ><span class="name">Countdown Timer</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a
-            href="/Mini-Web-Apps/Password%20Generator"
-            class="icon icon-directory"
-            title="Password Generator"
-            ><span class="name">Password Generator</span></a
-          >
-        </li>
-        <li>
-          <a href="/Mini-Web-Apps/Quiz" class="icon icon-directory" title="Quiz"
-            ><span class="name">Quiz</span></span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="/Mini-Web-Apps/Recipe%20App" class="icon icon-directory" title="Recipe App"
-            ><span class="name">Recipe App</span></span
-            ></a
-          >
-        </li>
-      </ul>
+  <body>
+    <div class="container">
+      <div class="header">
+        <input type="text" id="search-term" />
+        <button id="search-btn" onclick="getMealbySearch()">
+          <i class="fas fa-search"></i>
+        </button>
+        <h4 class="hidden" id="error">Error City/Area, not found!</h4>
+        <h1 id="city-name">Athens</h1>
+      </div>
+      <div class="body" id="body">
+        <!--  -->
+      </div>
     </div>
   </body>
 </html>
